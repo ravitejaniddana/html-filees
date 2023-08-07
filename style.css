@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+  }
+  
+  .sun, .planet {
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fdd835; /* Yellow for the sun */
+  }
+  
+  .sun {
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    z-index: 1;
+  }
+  
+  .mercury {
+    top: calc(50% - 130px);
+    left: calc(50% - 250px);
+    background-color: #b3b3b3; /* Gray for Mercury */
+  }
+  
+  .venus {
+    top: calc(50% - 200px);
+    left: calc(50% - 400px);
+    background-color: #ff9800; /* Orange for Venus */
+  }
+  
+  .earth {
+    top: calc(50% - 280px);
+    left: calc(50% - 600px);
+    background-color: #2196f3; /* Blue for Earth */
+  }
+  
+  .mars {
+    top: calc(50% - 360px);
+    left: calc(50% - 800px);
+    background-color: #f44336; /* Red for Mars */
+  }
+  
