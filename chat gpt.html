@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hema GPT</title>
+    <style>
+        * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+width: 100vw;
+height: 100vh;
+font-family: sans-serif;
+padding: 20em 5em;
+background-color: #0A2344;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.glass {
+width: 500px;
+height: 400px;
+background-color: rgba(255, 255, 255, 0.1);
+padding: 50px;
+color: #000;
+border-radius: 9px;
+backdrop-filter: blur(50px);
+border: 2px solid transparent;
+background-clip: padding-box;
+box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+line-height: 1.5;
+transform: translatey(-5%);
+transition: transform 0.5s;
+}
+.glass-1 {
+width: 500px;
+height: 400px;
+background-color: rgba(255, 255, 255, 0.1);
+padding: 50px;
+color: rgb(122, 82, 82);
+border-radius: 9px;
+backdrop-filter: blur(50px);
+border: 2px solid transparent;
+background-clip: padding-box;
+box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+line-height: 1.5;
+transform: translatey(-5%);
+transition: transform 0.5s;
+font-size: 1.7rem;
+}
+.glass h1 {
+font-size: 1.5rem;
+text-align: center;
+}
+.glass h2 {
+font-size: 1rem;
+margin-top: 20px;
+}
+.input {
+width: 100%;
+height: 70px;
+overflow: hidden;
+margin-top: 40px;
+}
+.input input {
+width: 100%;
+height: 70px;
+border: none;
+padding-left: 30px;
+padding-top: 0;
+outline: none;
+font-size: 1.5rem;
+border-radius: 20px;
+}
+.glass p {
+font-size: 1.6rem;
+margin-top: 30px;
+}
+    </style>
+</head>
+<body>
+    </html><div class="glass"> 
+        <h1>Hema GPT</h1>
+         <h2>Lets have Some Interaction</h2>
+          <div class="input"> 
+            <input type="text" id="userBox" onkeydown="if(event.keyCode == 13){ talk()}" placeholder="Type your Question" />
+         </div> 
+         <p id="Hema log">Answer Appering Hear</p> 
+        </div>
+        <script>
+            function talk(){
+var know = {
+"hai":"hai",
+"who are you" : "Hello, I'm a Hema chat bot here",
+"how are you" : "Good :)",
+"Did you eat":"Yeah just now",
+"em chesthunnav":"I'm on my duty",
+"what about your studies":"I have earned many degrees",
+"what do you know about me":"I know all about you hema :)",
+"how":"I'm a chatbot designed by you hema,how could I don't know about you",
+"who is hema":"A Sweet & Brilliant girl born to a godgifted mother.",
+"who is hema's mother":"Naraharisetti.Tulasi",
+"do you know about my sister":"Yeah I know her very well😁,asthamanu amma chese vantaki vankalu peduthu untundhi,and always keeps your mom smiling &healthy ",
+"do you speak telugu":"Yeah ofcourse,kunchem kunchem...",
+"what is my passion":"to achieve civil services and get trained at LSBNAA ",
+"my favourite sport" : "u love football mostly⚽.",
+"ok" : "Thank You So Much ",
+"bye" : "Okay! Will meet soon.."
+};
+var user = document.getElementById('userBox').value;
+document.getElementById('Hema log').innerHTML = user + "<br>";
+if (user in know) {
+document.getElementById('Hema log').innerHTML = know[user] + "<br>";
+}else{
+document.getElementById('Hema log').innerHTML = "Sorry,I didn't understand <br>";
+}
+}
+        </script>
+</body>
