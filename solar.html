@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+    
+        }
+        .c1{
+            height: 100px;
+            width: 100px;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin: auto;
+            
+            position:absolute;
+            bottom: 0px;
+            top:0px;
+            right:0px;
+            left:0px;
+        }
+        .c2{
+            height: 200px;
+            width: 200px;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin:auto;
+        
+            position:absolute;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            top: 0px;
+        }
+        .c3{
+            height: 300px;
+            width: 300px;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin: auto;
+            
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            top: 0px;
+            right: 0px;
+
+        }
+        .c4{
+            height: 400px;
+            width: 400px;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin: auto;
+            position: absolute;
+
+            bottom: 0px;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+
+        }
+        .c5{
+            height: 500px;
+            width: 500px;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin: auto;
+            bottom: 0px;
+            top: 0px;
+            position: absolute;
+            right: 0px;
+            left: 0px;
+        
+
+        }
+        .c6{
+            height: 600px;
+            width: 600px;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin: auto;
+            bottom: 0px;
+            top: 0px;
+            position: absolute;
+            right: 0px;
+            left: 0px;
+        }
+        .c7{
+            height: 700px;
+            width: 700px;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin: auto;
+            bottom: 0px;
+            top: 0px;
+            position: absolute;
+            right: 0px;
+            left: 0px;
+        }
+        .sun{
+            height: 30px;
+            width: 30px;
+            background-color:orangered;
+            color: blue;
+            border-radius: 50%;
+            position: relative;
+            margin: auto;
+            top: 360px;
+            box-shadow: 0 0 30px red,
+                        0 0 30px red,
+                        0 0 50px red,
+                        0 0 30px red;
+
+    
+
+        }
+        .mercury{
+            width: 20px;
+            height:20px;
+            background-color :blue;
+            border-radius: 50%;
+            position:absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            margin:auto;
+            animation: mercury 2s linear infinite;
+        }
+        .venus{
+            width: 50px;
+            height:50px;
+            background-color :blueviolet;
+            border-radius: 50%;
+            position:absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            margin:auto;
+            animation: venus 5s linear infinite;
+
+        }
+        .earth{
+            width: 20px;
+            height:20px;
+            background-color :rgb(15, 108, 139);
+            border-radius: 50%;
+            position:absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            margin:auto;
+            animation: earth 3s linear infinite;
+
+        }
+        .mars{
+            width: 40px;
+            height:40px;
+            background-color :green;
+            border-radius: 50%;
+            position:absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            margin:auto;
+            animation: mars 4s linear infinite;
+
+        }
+        .jupiter{
+            width: 50px;
+            height:50px;
+            background-color:orange;
+            border-radius: 50%;
+            position:absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            margin:auto;
+            animation: jupiter 6s linear infinite;
+
+        }
+        .urenus{
+            width: 30px;
+            height:30px;
+            background-color :aqua;
+            border-radius: 50%;
+            position:absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            margin:auto;
+            animation: urenus 1s linear infinite;
+
+        }
+        .neptun{
+            width: 50px;
+            height:50px;
+            background-color :pink;
+            border-radius: 50%;
+            position:absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            margin:auto;
+            animation: neptun 2s linear infinite;
+
+        }
+        @keyframes mercury{
+            0%{
+        transform: rotate(0deg)translate(47px);
+    }
+    100% {
+        transform:rotate(360deg)translate(47px);
+    }
+}
+        @keyframes venus {
+            0%{
+                transform: rotate(0deg)translate(100px);
+        
+            }
+            100%{
+                transform: rotate(360deg)translate(100px);
+            }
+            
+        }
+        @keyframes earth{
+            0%{
+                transform: rotate(0deg)translate(150px);
+            }
+            100%{
+                transform: rotate(360deg)translate(150px)
+            }
+        }
+        @keyframes mars{
+            0%{
+                transform: rotate(0deg)translate(200px);
+            }
+            100%{
+                transform: rotate(360deg)translate(200px);
+            }
+        }
+        @keyframes jupiter{
+            0%{
+                transform: rotate(0deg)translate(250px);
+            }
+            100%{
+                transform: rotate(360deg)translate(250px);
+            }
+        }
+        @keyframes urenus{
+            0%{
+                transform: rotate(0deg)translate(300px);
+            }
+            100%{
+                transform: rotate(360deg)translate(300px);
+            }
+        }
+        @keyframes neptun{
+            0%{
+                transform: rotate(0deg)translate(350px);
+            }
+            100%{
+                transform: rotate(360deg)translate(350px);
+            }
+        }
+        
+
+
+
+    </style>
+
+</head>
+<body>
+  <div class="mercury"></div>
+  <div class="venus"></div>
+  <div class="earth"></div>
+  <div class="mars"></div>
+  <div class="jupiter"></div>
+  <div class="urenus"></div>
+  <div class="neptun"></div>
+  <div class="saturn"></div> 
+  <div class="sun"></div>
+  <div class="c1"></div>
+  <div class="c2"></div>
+  <div class="c3"></div>
+  <div class="c4"></div>
+  <div class="c5"></div>
+  <div class="c6"></div>
+  <div class="c7"></div>
+  <div class="c8"></div> 
+</body>
+</html>
