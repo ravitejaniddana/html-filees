@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body{
+        border: 3px solid green;
+        outline: 10px outset pink;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 50px 600px;
+
+    }
+    form{
+        text-align: center;
+    } 
+    input[type="text"]{
+        margin: auto;
+        height: 30px;
+        width: 180px;
+        margin-bottom: 10px;
+        border: 2px solid green;
+        border-radius: 10%;
+
+    }
+    input[type="button"]{
+        border: 2px solid violet;
+        height: 45px;
+        width: 45px;
+        border-left: 25px;
+        border-right: 25px;
+        border-radius: 20%;
+        margin-bottom: 5px;
+        margin-left: 3px;
+
+
+
+    }
+    h1{
+        color: green;
+        text-shadow: 2px 1px  orange;
+    }
+    .num{
+        background-color: bisque;
+    }
+    .num:focus{
+        background-color: aqua;
+    }
+    .op{
+        background-color: cyan;
+    }
+    .op:focus{
+        background-color: darkkhaki;
+    }
+</style>
+</head>
+<body>
+    <h1>calculator</h1>
+    <form name="cal">
+        <input type="text" name="display"><br>
+        <input type="button" onclick="cal.display.value+='1'" value="1" class="num">
+        <input type="button" onclick="cal.display.value+='2'" value="2"class="num">
+        <input type="button" onclick="cal.display.value+='3'" value="3"class="num">
+        <input type="button" onclick="cal.display.value+='+'" value="+"class="op">
+        <br>
+        <input type="button" onclick="cal.display.value+='4'" value="4"class="num">
+        <input type="button" onclick="cal.display.value+='5'" value="5"class="num">
+        <input type="button" onclick="cal.display.value+='6'" value="6"class="num">
+        <input type="button" onclick="cal.display.value+='-'" value="-"class="op">
+        <br>
+        <input type="button" onclick="cal.display.value+='7'" value="7"class="num">
+        <input type="button" onclick="cal.display.value+='8'" value="8"class="num">
+        <input type="button" onclick="cal.display.value+='9'" value="9"class="num">
+        <input type="button" onclick="cal.display.value+='*'" value="*"class="op">
+        <br> 
+        <input type="button" onclick="cal.display.value=' '" value="c"class="op">
+        <input type="button" onclick="cal.display.value+='0'" value="0"class="num">
+        <input type="button" onclick="cal.display.value=eval(cal.display.value)" value="="class="op">
+        <input type="button" onclick="cal.display.value+='/'" value="/"class="op">
+    
+    </form>   
+</body>
+</html>
