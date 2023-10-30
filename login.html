@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Validated Login Form</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(pink,purple);
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+.center{
+    margin-top: 40px;
+    height: auto;
+    background-color: blanchedalmond; 
+    border-radius: 10px;
+    width: 500px;
+}
+.header{
+    text-align: center;
+    margin: 20px;
+    color: green;
+    font-family: sans-serif;
+}
+form{
+    margin: 20px 33px;
+    font-weight: bold;
+    color: purple;
+}    
+form .font{ 
+    font-size: 25px;
+    font-family: sans-serif;
+}
+form input{
+    height: 40px; 
+    width: 100%;
+    padding: 0 10px;
+    font-size: 18px;
+    border: 2px solid green;
+}
+form .font2{
+    margin-top: 30px;
+}
+form button{
+    background-color: purple; 
+    color: white;
+    margin: 40px 0 30px; 
+    height: 45px; 
+    border-radius: 10px;
+    width: 100%; 
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+form button:hover{ 
+    background: plum;
+    color: purple;
+}
+form #email_error,form #pass_error{
+    border: 2px solid #EF9A9A; 
+    background:rgba(250,0,0,0.1); 
+    text-align: center;
+    font-size: medium;
+    padding: 5px 8px;
+    display: none;
+}    
+
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1 class="header">USER LOGIN</h1>
+        <form class="form" action="loginsuccess.html" method="get" name="form"
+            onsubmit="return validated()">
+            <div class="font">Email or Phone Number</div><br>
+            <input type="text" name="email"><br>
+            <div id="email_error">Please fill up your Email or Phone</div>
+            <div class="font font2">Password</div><br>
+            <input type="password" name="password"><br>
+            <div id="pass_error">Please fill up your Password</div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+var email = document.forms['form']['email']; 
+var password = document.forms['form']['password'];
+
+var email_error = document.getElementById('email_error'); 
+var pass_error = document.getElementById('pass_error');
+
+email.addEventListener('textInput', email_Verify); 
+password.addEventListener('textInput', pass_Verify);
+
+function validated(){
+    if (email.value.length<10){ 
+        email.style.border = "1px solid red"; 
+        email_error.style.display = "block"; 
+        email.focus();
+        return false;
+    }
+    if (password.value.length<6){
+        password.style.border = "1px solid red"; 
+        pass_error.style.display = "block"; 
+        password.focus();
+        return false;
+    }
+}
+function email_Verify(){
+    if (email.value.length>= 9){ 
+        email.style.border = "1px solid green"; 
+        email_error.style.display = "none"; 
+        return true;
+    }
+}
+function pass_Verify(){
+    if (password.value.length>= 5){ 
+        password.style.border = "1px solid green"; 
+        pass_error.style.display = "none"; 
+        return true;
+    }
+}
+
+    </script>
+</body>
+</html>
